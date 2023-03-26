@@ -4,7 +4,7 @@
 In this lesson, we're going to learn how to use [VADER](https://github.com/cjhutto/vaderSentiment), an English-language sentiment analysis tool designed for use with social media texts. This tool helps to calculate whether texts express positive or negative sentiment.
 
 In this lesson, we will learn how to use VADER to:
-- Calculate sentiment for individual sentences, tweets, and a fairy tale
+- Calculate sentiment for individual sentences, and tweets
 - Make plots of how sentiment fluctuates over time and throughout a text
 ---
 
@@ -30,7 +30,7 @@ These are tough and important questions. According to VADER's creators, C.J. Hut
 
 I would like to emphasize that "opinions, sentiments, evaluations, attitudes, and emotions" covers a *lot* of ground. These are complex categories of human experience that can be expressed in many different ways, especially in different contexts. In fact, that's why Hutto and Gilbert designed VADER specifically for *social media* texts, because sentiment gets expressed differently in social media posts than in, say, fictional stories or newspaper articles.
 
-We want to remain critical and self-reflexive about what exactly we are measuring with VADER — especially when we apply VADER to non-social media texts, as we will with "Little Red-Cap" below. Too often I have encountered well-meaning students who want to understand complex social or textual phenomena (e.g., mental health, a reader's emotional experience of a story, opinions about climate change) by reducing it only to sentiment analysis scores, without doing more and without thinking more deeply about whether those scores actually capture what they're interested in.
+We want to remain critical and self-reflexive about what exactly we are measuring with VADER — especially when we apply VADER to non-social media texts. Too often I have encountered well-meaning students who want to understand complex social or textual phenomena (e.g., mental health, a reader's emotional experience of a story, opinions about climate change) by reducing it only to sentiment analysis scores, without doing more and without thinking more deeply about whether those scores actually capture what they're interested in.
 
 So, yes, tools like VADER can be useful, as we will see below, but they are only useful when thoughtfully and deliberately applied.
 
