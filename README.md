@@ -203,7 +203,6 @@ Nice, it works! Now we can apply it to every row in the dataframe with the `.app
 
 
 ```python
-# Apply the function to every row in the "text" column and output the results into a new column "sentiment_score"
 tweets_df['sentiment_score'] = tweets_df['text'].apply(calculate_sentiment)
 ```
 
@@ -229,7 +228,6 @@ We can plot how the sentiment pf student debt relief tweets fluctuates over time
 ```python
 tweets_df['date'] = pd.to_datetime(tweets_df['date'])
 
-# Make date the index of the DataFrame
 tweets_df = tweets_df.set_index('date')
 ```
 
@@ -382,11 +380,8 @@ sentences = nltk.sent_tokenize(text)
 
 # Make empty list
 sentence_scores = []
-# Get each sentence and sentence number, which is what enumerate does
 for number, sentence in enumerate(sentences):
-    # Use VADER to calculate sentiment
     scores = sentimentAnalyser.polarity_scores(sentence)
-    # Make dictionary and append it to the previously empty list
     sentence_scores.append({'sentence': sentence, 'sentence_number': number+1, 'sentiment_score': scores['compound']})
 ```
 
@@ -401,10 +396,8 @@ Let's examine the 10 most negative sentences.
 
 
 ```python
-# Assign DataFrame to variable red_df
 speech_df = pd.DataFrame(sentence_scores)
 
-# Sort by the column "sentiment_score" and slice for first 10 values
 speech_df.sort_values(by='sentiment_score')[:10]
 ```
 
@@ -412,7 +405,6 @@ Let's examine the 10 most positive sentences.
 
 
 ```python
-# Sort by the column "sentiment_score," this time in descending order, and slice for first 10 values
 speech_df.sort_values(by='sentiment_score', ascending=False)[:10]
 ```
 
