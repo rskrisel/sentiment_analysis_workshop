@@ -332,9 +332,7 @@ Next, let's read in the text file and also replace line breaks with spaces to be
 
 
 ```python
-# Read in text file
 text = open("2023_union.txt").read()
-# Replace line breaks with spaces
 text = text.replace('\n', ' ')
 ```
 
@@ -375,10 +373,8 @@ Below we loop through the sentences, calculate sentiment scores, and then create
 
 
 ```python
-# Break text into sentences
 sentences = nltk.sent_tokenize(text)
 
-# Make empty list
 sentence_scores = []
 for number, sentence in enumerate(sentences):
     scores = sentimentAnalyser.polarity_scores(sentence)
