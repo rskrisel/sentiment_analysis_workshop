@@ -74,7 +74,7 @@ To use it, we need to install the [vaderSentiment package](https://github.com/cj
 
 
 ```python
-# !pip install vaderSentiment
+!pip install vaderSentiment
 ```
 
 
